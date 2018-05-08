@@ -4,4 +4,14 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    nav
+      a(href='/') Home
+      |&nbsp;|&nbsp;
+
+      if session.user.id
+        a(href='/users') Users
+        |&nbsp;|&nbsp;
+        a(href='/users/Logout') Logout
+      else
+        a(href='/users/Login') Login
     block content
