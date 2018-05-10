@@ -6,3 +6,50 @@ body {
 a {
   color: #00B7FF;
 }
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.table td,
+.table th{
+  border: 1px solid #ddd;
+  padding: .5rem;
+}
+
+.table tbody tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover{
+  background-color: #ddd;
+}
+
+.table tbody th{
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea{
+  font: 24px monospace;
+  padding: .75rem 1.25rem;
+  margin: .5rem 0 1rem;
+  display: inline-block;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  width: 100%; 
+}
+
+input[type="submit"],
+button{
+  padding: .75rem 1.25rem;
+  font: 24px monospace;
+}

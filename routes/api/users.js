@@ -2,6 +2,13 @@ var express = require('express');
 var router = express.Router();
 var User = require('../../models/user');
 
+var bodyParser = require('body-parser');
+
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({
+  extended: false
+}));
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
@@ -103,10 +110,10 @@ router.put('/', function(req,res,next){
     }
 
     if(data.first_name){
-      user.username = data.first_name;
+      user.first_name = data.first_name;
     }
 
-    if(data.username){
+    if(data.last_name){
       user.last_name = data.last_name;
     }
 
