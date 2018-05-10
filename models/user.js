@@ -49,4 +49,4 @@ User.pre('save', function(next){
 
 User.plugin(uniqueValidator);
 User.plugin(passportLocalMongoose);
-module.exports  = mongoose.model('User', User);
+module.exports = mongoose.model('User', User);
