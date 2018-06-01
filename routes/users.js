@@ -20,7 +20,7 @@ router.get('/login', function(req, res, next){
 
 router.post('/login', passport.authenticate('local'),
 function(req, res, next){
-  res.redirect('/users');
+  res.redirect('/ionic');
 });
 
 router.get(
