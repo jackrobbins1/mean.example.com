@@ -81,7 +81,7 @@ router.post('/', function(req, res, next) {
       return res.json({'success':false, user:req.body, 'error': err});
     }
 
-    return res.json({'success':true, 'users':user});
+    return res.json({'success':true, 'user':user});
   });
 
 });
