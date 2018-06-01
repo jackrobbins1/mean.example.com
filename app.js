@@ -15,6 +15,7 @@ var User = require('./models/user')
 // Routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var articlesRouter = require('./routes/articles');
 var apiArticlesRouter = require('./routes/api/articles');
 var apiUsersRouter = require('./routes/api/users');
 
@@ -148,6 +149,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/articles', articlesRouter);
 app.use('/api/articles', apiArticlesRouter);
 app.use('/api/users', apiUsersRouter);
 
