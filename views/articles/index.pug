@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    h1 Hello Index
+
+    ul
+        each article in articles
+            li
+                a(href='articles/' + article.slug)= article.title
