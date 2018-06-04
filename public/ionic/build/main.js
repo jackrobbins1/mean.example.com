@@ -821,7 +821,7 @@ var httpOptions = {
 var UserProvider = /** @class */ (function () {
     function UserProvider(http) {
         this.http = http;
-        this.url = 'http://localhost:3000/api/users';
+        this.url = 'https://jacksonr.com/api/users';
     }
     UserProvider.prototype.getUser = function (id) {
         return this.http.get(this.url + "/" + id);
@@ -873,7 +873,7 @@ var httpOptions = {
 var ArticleProvider = /** @class */ (function () {
     function ArticleProvider(http) {
         this.http = http;
-        this.url = 'http://localhost:3000/api/Articles';
+        this.url = 'https://jacksonr.com/api/Articles';
     }
     ArticleProvider.prototype.getArticle = function (id) {
         return this.http.get(this.url + "/" + id);
