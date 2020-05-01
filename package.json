@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "snyk test"
+    "test": "snyk test",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "compression": "^1.7.2",
@@ -22,9 +24,9 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.0",
     "pug": "^2.0.3",
-    "slug": "^0.9.1"
+    "slug": "^0.9.1",
+    "snyk": "^1.316.1"
   },
-  "devDependencies": {
-    "snyk": "^1.80.0"
-  }
+  "devDependencies": {},
+  "snyk": true
 }
