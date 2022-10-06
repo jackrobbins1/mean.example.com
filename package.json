@@ -25,6 +25,6 @@
     "slug": "^0.9.1"
   },
   "devDependencies": {
-    "snyk": "^1.80.0"
+    "snyk": "^1.1024.0"
   }
 }
